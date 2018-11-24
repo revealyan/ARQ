@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{A9707E8F-E500-435B-B19C-0E5109E8B29D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARQ.WebAPI", "Web\ARQ.WebAPI\ARQ.WebAPI.csproj", "{C777FCA5-A14E-4404-9254-31E082D6892D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{901C0138-0049-43F0-9AAA-5CEEEDC2D62D}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\Common.Database.Interface.dll = Dependencies\Common.Database.Interface.dll
+		Dependencies\Common.Database.MySQL.dll = Dependencies\Common.Database.MySQL.dll
+		Dependencies\Common.Logger.Interface.dll = Dependencies\Common.Logger.Interface.dll
+		Dependencies\Common.Logger.Log4Net.dll = Dependencies\Common.Logger.Log4Net.dll
+		Dependencies\Common.Modules.Base.dll = Dependencies\Common.Modules.Base.dll
+		Dependencies\Core.dll = Dependencies\Core.dll
+		Dependencies\Core.Platforms.dll = Dependencies\Core.Platforms.dll
+		Dependencies\Google.Protobuf.dll = Dependencies\Google.Protobuf.dll
+		Dependencies\log4net.config = Dependencies\log4net.config
+		Dependencies\log4net.dll = Dependencies\log4net.dll
+		Dependencies\MySql.Data.dll = Dependencies\MySql.Data.dll
+		Dependencies\Newtonsoft.Json.dll = Dependencies\Newtonsoft.Json.dll
+		Dependencies\Utils.Collections.dll = Dependencies\Utils.Collections.dll
+		Dependencies\Utils.Runtime.dll = Dependencies\Utils.Runtime.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ARQModules", "ARQModules", "{D91424A1-0B9A-4FE0-ACC6-69B06CA495D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{F9099A2E-4067-436D-946F-A480193A8FF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{6165E022-BAFA-4EAC-A28D-DE550843CBD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARQModules.SubscribeManagement.Interface", "ARQModules\ARQModules.SubscribeManagement.Interface\ARQModules.SubscribeManagement.Interface.csproj", "{7139F2B4-5AC0-4F6B-A84C-F8717B1F2D56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARQModules.SubscribeManagement", "ARQModules\ARQModules.SubscribeManagement\ARQModules.SubscribeManagement.csproj", "{DE9B126C-0C3E-442C-B073-4EEC948DACC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C777FCA5-A14E-4404-9254-31E082D6892D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C777FCA5-A14E-4404-9254-31E082D6892D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C777FCA5-A14E-4404-9254-31E082D6892D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C777FCA5-A14E-4404-9254-31E082D6892D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7139F2B4-5AC0-4F6B-A84C-F8717B1F2D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7139F2B4-5AC0-4F6B-A84C-F8717B1F2D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7139F2B4-5AC0-4F6B-A84C-F8717B1F2D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7139F2B4-5AC0-4F6B-A84C-F8717B1F2D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE9B126C-0C3E-442C-B073-4EEC948DACC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9B126C-0C3E-442C-B073-4EEC948DACC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9B126C-0C3E-442C-B073-4EEC948DACC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9B126C-0C3E-442C-B073-4EEC948DACC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C777FCA5-A14E-4404-9254-31E082D6892D} = {A9707E8F-E500-435B-B19C-0E5109E8B29D}
+		{F9099A2E-4067-436D-946F-A480193A8FF8} = {D91424A1-0B9A-4FE0-ACC6-69B06CA495D6}
+		{6165E022-BAFA-4EAC-A28D-DE550843CBD1} = {D91424A1-0B9A-4FE0-ACC6-69B06CA495D6}
+		{7139F2B4-5AC0-4F6B-A84C-F8717B1F2D56} = {6165E022-BAFA-4EAC-A28D-DE550843CBD1}
+		{DE9B126C-0C3E-442C-B073-4EEC948DACC6} = {F9099A2E-4067-436D-946F-A480193A8FF8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DD1EC42-5537-45E8-ABAF-FDA9CF469DC3}
+	EndGlobalSection
+EndGlobal
